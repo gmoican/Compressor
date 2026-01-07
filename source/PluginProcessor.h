@@ -102,6 +102,8 @@ public:
     juce::AudioProcessorValueTreeState apvts;
     
     void updateParameters();
+    
+    float sendGainReduction() { return compressor.getGainReduction(); }
 
 private:
     juce::AudioProcessorValueTreeState::ParameterLayout createParams();
